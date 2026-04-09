@@ -23,7 +23,7 @@ const Products = () => {
         Shop our collections
       </p>
 
-      <div className="mt-4 flex w-full max-w-350 flex-wrap justify-center gap-10 px-4 sm:px-6 md:justify-between md:gap-16 md:px-8">
+      <div className="mt-4 flex w-full max-w-350 flex-wrap justify-center gap-10 px-4 sm:px-6 md:gap-12 md:px-8 lg:justify-between lg:gap-16">
         {products.map((product, index) => (
           <div key={index} className="flex w-full max-w-xs flex-col items-center sm:w-80">
             <div className="relative mb-6 h-72 w-full transition-transform duration-500 hover:scale-110 hover:-rotate-3 sm:h-80">

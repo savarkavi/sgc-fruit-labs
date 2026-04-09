@@ -16,9 +16,9 @@ const Science = () => {
       <p className="mt-6 mb-12 px-4 text-center text-base tracking-widest text-[#2B1B12] uppercase md:mb-26 md:mt-8 md:text-xl">
         Not coated. Not sprayed. Built within the fruit itself.
       </p>
-      <div className="flex w-full max-w-350 flex-col items-center justify-center gap-10 px-4 md:flex-row md:gap-20 md:px-0">
+      <div className="flex w-full max-w-350 flex-col items-center justify-center gap-10 px-4 lg:flex-row lg:gap-20 lg:px-0">
         <div className="rounded-xl border bg-yellow-500 p-4">
-          <div className="relative h-64 w-64 rounded-xl sm:h-80 sm:w-80 md:h-100 md:w-100">
+          <div className="relative h-64 w-64 rounded-xl sm:h-80 sm:w-80 md:h-96 md:w-96 lg:h-100 lg:w-100">
             <Image
               src="/science-img.jpg"
               alt="scientist image"
@@ -27,7 +27,7 @@ const Science = () => {
             />
           </div>
         </div>
-        <div className="max-w-full px-2 md:max-w-150 md:px-0">
+        <div className="max-w-full px-2 md:max-w-2xl lg:max-w-150 lg:px-0">
           <p className={`${amarante.className} text-justify text-base leading-relaxed md:text-lg`}>
             Most snacks add nutrients to the surface—where they fade quickly,
             lose potency, and never truly become part of the food. Our process
