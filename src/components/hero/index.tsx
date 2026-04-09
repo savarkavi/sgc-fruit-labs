@@ -18,30 +18,18 @@ const HeroSection = () => {
   // Loading animation logic
   useGSAP(
     () => {
-      if (loadedImages < 3) {
-        gsap.to(".loading-char", {
-          y: -15,
-          stagger: 0.1,
-          repeat: -1,
-          yoyo: true,
-          ease: "power1.inOut",
-          duration: 0.5,
-        });
-      } else {
-        // Reveal the main site
-        const tl = gsap.timeline();
-        tl.to(".loading-char", {
-          y: -30,
-          opacity: 0,
-          stagger: 0.05,
-          duration: 0.4,
-          ease: "back.in(2)",
-        }).to(loadingRef.current, {
-          yPercent: -100,
-          duration: 1,
-          ease: "expo.inOut",
-        });
-      }
+      const tl = gsap.timeline();
+      tl.to(".loading-char", {
+        y: -30,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.4,
+        ease: "back.in",
+      }).to(loadingRef.current, {
+        yPercent: -100,
+        duration: 1,
+        ease: "expo.inOut",
+      });
     },
     { dependencies: [loadedImages], scope: loadingRef },
   );
