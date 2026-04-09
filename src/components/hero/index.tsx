@@ -103,6 +103,7 @@ const HeroSection = () => {
         >
           {Array.from("Loading...").map((char, i) => (
             <span
+              style={{ willChange: "transform" }}
               key={i}
               className={`loading-char inline-block ${
                 char === " " ? "w-4 sm:w-8" : ""
